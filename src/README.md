@@ -3,8 +3,8 @@
 ## Run
 
 ```console
-cmake .
-make
-./Buzz-GB
+cmake . # generate Makefile
+make # build executable
+./Buzz-GB Run executable
 ```
 
