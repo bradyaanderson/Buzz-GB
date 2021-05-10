@@ -2,9 +2,9 @@
 
 ## Run
 
-```console
-cmake . # generate Makefile
-make # build executable
-./Buzz-GB Run executable
+```shell
+cmake .     # generate Makefile
+make        # build executable
+./Buzz-GB   # Run executable
 ```
 
