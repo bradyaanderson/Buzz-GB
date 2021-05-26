@@ -2,12 +2,23 @@
 #include <stdint.h>
 using namespace std;
 
-// #define a registers.a()
+/*
+Header file for register implementation.
+
+Each block contains two 8-bit registers, then a simulated 16-bit register 
+created by joining the 8-bit registers together.
+
+There is a getter and setter for each register. The getters and setters for 
+the combined registers get and set based on what is contained in the 8-bit registers.
+
+There are additionally two naturally 16-bit registers, pc and sp.
+*/
 
 class {
     public:
-        uint8_t reg_a, reg_b, reg_c, reg_d, reg_e, reg_f, reg_h, reg_l;
-        uint16_t reg_sp, reg_pc;
+        // initialize register variables
+        uint8_t reg_a, reg_b, reg_c, reg_d, reg_e, reg_f, reg_h, reg_l; // 8-bit
+        uint16_t reg_sp, reg_pc;                                        // 16-bit
 
         // a, f, af
         constexpr uint8_t a() const noexcept {
@@ -108,6 +119,12 @@ class {
         }
 
 } registers;
+
+/*
+Basic function to output all the data in all the registers.
+
+Primarily for de-bugging purposes.
+*/
 
 void dump_registers() {
     cout 
