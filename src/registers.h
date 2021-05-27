@@ -128,23 +128,23 @@ Primarily for de-bugging purposes.
 
 void dump_registers() {
     cout 
-    << "a : " << (uint32_t) registers.a() << endl
-    << "f : " << (uint32_t) registers.f() << endl
-    << "af: " << (uint32_t) registers.af() << endl
+    << "a : " << hex << (uint32_t) registers.a() << endl
+    << "f : " << hex << (uint32_t) registers.f() << endl
+    << "af: " << hex << (uint32_t) registers.af() << endl
     << endl
-    << "b : " << (uint32_t) registers.b() << endl
-    << "c : " << (uint32_t) registers.c() << endl
-    << "bc: " << (uint32_t) registers.bc() << endl
+    << "b : " << hex << (uint32_t) registers.b() << endl
+    << "c : " << hex << (uint32_t) registers.c() << endl
+    << "bc: " << hex << (uint32_t) registers.bc() << endl
     << endl
-    << "d : " << (uint32_t) registers.d() << endl
-    << "e : " << (uint32_t) registers.e() << endl
-    << "de: " << (uint32_t) registers.de() << endl
+    << "d : " << hex << (uint32_t) registers.d() << endl
+    << "e : " << hex << (uint32_t) registers.e() << endl
+    << "de: " << hex << (uint32_t) registers.de() << endl
     << endl
-    << "h : " << (uint32_t) registers.h() << endl
-    << "l : " << (uint32_t) registers.l() << endl
-    << "hl: " << (uint32_t) registers.hl() << endl
+    << "h : " << hex << (uint32_t) registers.h() << endl
+    << "l : " << hex << (uint32_t) registers.l() << endl
+    << "hl: " << hex << (uint32_t) registers.hl() << endl
     << endl
-    << "sp: " << (uint32_t) registers.sp() << endl
-    << "pc: " << (uint32_t) registers.pc() << endl;
+    << "sp: " << hex << (uint32_t) registers.sp() << endl
+    << "pc: " << hex << (uint32_t) registers.pc() << endl;
 }
 
