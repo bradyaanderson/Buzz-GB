@@ -13,7 +13,6 @@ using namespace std;
 * 
 * There are additionally two naturally 16-bit registers, pc and sp.
 */
-
 class {
     public:
         // initialize register variables
