@@ -79,9 +79,30 @@ public:
 
     void set_pc(uint16_t value) noexcept;
 
-    /**
-     * Basic function to output all the data in all the registers.
-     * Primarily for de-bugging purposes.
-     */
-    void dump_registers();
+    /*
+    * Basic function to output all the data in all the registers.
+    * Primarily for de-bugging purposes.
+    */
+    void dump_registers() {
+        cout 
+        << "a : " << hex << (uint32_t) registers.a() << endl
+        << "f : " << hex << (uint32_t) registers.f() << endl
+        << "af: " << hex << (uint32_t) registers.af() << endl
+        << endl
+        << "b : " << hex << (uint32_t) registers.b() << endl
+        << "c : " << hex << (uint32_t) registers.c() << endl
+        << "bc: " << hex << (uint32_t) registers.bc() << endl
+        << endl
+        << "d : " << hex << (uint32_t) registers.d() << endl
+        << "e : " << hex << (uint32_t) registers.e() << endl
+        << "de: " << hex << (uint32_t) registers.de() << endl
+        << endl
+        << "h : " << hex << (uint32_t) registers.h() << endl
+        << "l : " << hex << (uint32_t) registers.l() << endl
+        << "hl: " << hex << (uint32_t) registers.hl() << endl
+        << endl
+        << "sp: " << hex << (uint32_t) registers.sp() << endl
+        << "pc: " << hex << (uint32_t) registers.pc() << endl;
+    }
+    
 } registers;
