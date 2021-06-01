@@ -116,6 +116,10 @@ void Registers::set_pc(uint16_t value) noexcept {
     reg_pc = value;
 }
 
+/*
+* Basic function to output all the data in all the registers.
+* Primarily for de-bugging purposes.
+*/
 void Registers::dump_registers() {
     cout
             << "a : " << hex << (uint32_t) a() << endl
