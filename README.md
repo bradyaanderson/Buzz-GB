@@ -15,7 +15,7 @@ make        # build executable
 
 ## Run
 
-To execute the binary created in [Build](#Build):
+To execute the binary created in [Build](#build):
 
 ```shell
 ./Buzz-GB 
