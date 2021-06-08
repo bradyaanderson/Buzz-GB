@@ -18,8 +18,6 @@ int main() {
     gb_registers.set_sp(0x4444);
     gb_registers.set_pc(0x1000);
 
-
     gb_registers.dump_registers();
     return 0;
 }
-

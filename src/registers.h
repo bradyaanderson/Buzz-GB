@@ -83,6 +83,5 @@ public:
     * Basic function to output all the data in all the registers.
     * Primarily for de-bugging purposes.
     */
-    void dump_registers(); 
-    
+    void dump_registers();
 };
